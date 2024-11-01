@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="zh">
+  <head>
+    <meta charset="UTF-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, maximum-scale=1, user-scalable=no, minimal-ui"
+    />
+    <title>九霄⚡️一盟</title>
+    <link rel="stylesheet" href="./static/styles.css" />
+    <script type="module" src="./static/2048/main.js"></script>
+  </head>
+
+  <body>
+    <p style="font-size: 50px;">九霄牛逼!</p>
+    <p>
+      使用方法：点击格子右侧+1，左侧-1，设置成跟实际情况一样后点“走一步”评估最优解
+    </p>
+    <p>最优移动方向：<span id="dir"></span></p>
+
+    <div id="grid">
+      <div class="cell" id="grid_0_0"></div>
+      <div class="cell" id="grid_0_1"></div>
+      <div class="cell" id="grid_0_2"></div>
+      <div class="cell" id="grid_0_3"></div>
+
+      <div class="cell" id="grid_1_0"></div>
+      <div class="cell" id="grid_1_1"></div>
+      <div class="cell" id="grid_1_2"></div>
+      <div class="cell" id="grid_1_3"></div>
+
+      <div class="cell" id="grid_2_0"></div>
+      <div class="cell" id="grid_2_1"></div>
+      <div class="cell" id="grid_2_2"></div>
+      <div class="cell" id="grid_2_3"></div>
+
+      <div class="cell" id="grid_3_0"></div>
+      <div class="cell" id="grid_3_1"></div>
+      <div class="cell" id="grid_3_2"></div>
+      <div class="cell" id="grid_3_3"></div>
+    </div>
+    <div class="container" style="display: none">
+      <div class="game-container">
+        <div class="grid-container">
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+          <div class="grid-row">
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+            <div class="grid-cell"></div>
+          </div>
+        </div>
+
+        <div class="tile-container"></div>
+      </div>
+    </div>
+    <div>
+      <button onclick="clear1()">全部清空</button>
+      <button id="ai-step">走一步</button>
+    </div>
+
+    <script src="./static/script.js"></script>
+    
+  </body>
+</html>
